@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        font-family: "figtree";
+        background-color: hsl(47, 88%, 63%);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        max-width: 30%;
+        margin: 5rem auto;
+        background-color: hsl(0, 0%, 100%);
+        padding: 2rem;
+        border-radius: 2rem;
+        box-shadow: 1.4rem 1.4rem 0rem 0rem hsl(0, 0%, 7%);
+      }
+
+      .header-img {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        display: inline-block;
+      }
+
+      .tag {
+        font-size: 1.4rem;
+        background-color: hsl(47, 88%, 63%);
+        display: inline-block;
+        padding: 0.4rem 1.2rem;
+        border-radius: 0.4rem;
+        font-weight: 700;
+        margin: 1.6rem 0;
+      }
+
+      .date {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        color: hsl(0, 0%, 7%);
+      }
+
+      .title:link,
+      .title:visited {
+        font-size: 2.4rem;
+        margin-top: 2.4rem;
+        color: hsl(0, 0%, 7%);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .title:hover,
+      .title:active {
+        color: hsl(47, 88%, 63%);
+      }
+
+      .paragraph {
+        margin-top: 2.4rem;
+        font-size: 1.6rem;
+        margin-bottom: 1.8rem;
+        color: hsl(0, 0%, 50%);
+      }
+
+      .author-profile {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.8rem;
+      }
+
+      .profile-img {
+        width: 10%;
+      }
+
+      .author-name {
+        color: hsl(0, 0%, 7%);
+        font-weight: 700;
+      }
+
+      .attribution {
+        font-size: 1rem;
+        color: hsl(0, 0%, 50%);
+        text-align: center;
+      }
+
+      .attribution a:link,
+      .attribution a:visited {
+        color: hsl(0, 0%, 50%);
+        text-decoration: none;
+      }
+
+      .attribution a:hover,
+      .attribution a:active {
+        color: hsl(47, 88%, 63%);
+      }
+
+      /* ****************************** */
+      /* RESPONSIVE */
+      /* ****************************** */
+
+      @media (max-width: 66.25em) {
+        .container {
+          max-width: 40%;
+        }
+      }
+
+      @media (max-width: 50em) {
+        .container {
+          max-width: 50%;
+        }
+      }
+
+      @media (max-width: 40em) {
+        .container {
+          max-width: 70%;
+        }
+      }
+
+      @media (max-width: 28.25em) {
+        .container {
+          max-width: 85%;
+          box-shadow: 1rem 1rem 0rem 0rem hsl(0, 0%, 7%);
+        }
+
+        .title:link,
+        .title:visited {
+          font-size: 2rem;
+        }
+
+        .paragraph {
+          font-size: 1.4rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <svg
+        class="header-img"
+        xmlns="http://www.w3.org/2000/svg"
+        width="336"
+        height="201"
+        fill="none"
+        viewBox="0 0 336 201"
+      >
+        <g clip-path="url(#a)">
+          <path fill="#F4D04E" d="M0 .5h336v200H0z" />
+          <rect
+            width="139"
+            height="95"
+            x="87.996"
+            y="77.729"
+            fill="#fff"
+            rx="47.5"
+            transform="rotate(-45 87.996 77.729)"
+          />
+          <rect
+            width="139"
+            height="95"
+            x="54.055"
+            y="77.729"
+            fill="#111"
+            rx="47.5"
+            transform="rotate(-45 54.055 77.729)"
+          />
+          <path
+            fill="#111"
+            d="M234.864 209.036 451.4-7.5l67.175 67.175-216.536 216.536z"
+          />
+          <rect
+            width="139"
+            height="95"
+            x="20.114"
+            y="77.729"
+            fill="#fff"
+            rx="47.5"
+            transform="rotate(-45 20.114 77.729)"
+          />
+          <rect
+            width="204.19"
+            height="270.554"
+            fill="#111"
+            rx="102.095"
+            transform="scale(-1 1) rotate(45 -103.887 14.564)"
+          />
+          <path
+            stroke="#fff"
+            stroke-width="3"
+            d="m6.69-357.5 135.583 135.727c12.481 12.494 12.481 32.737 0 45.231L-45.544 11.475c-12.481 12.494-12.481 32.737 0 45.23L107.088 209.5"
+          />
+          <path
+            stroke="#111"
+            stroke-width="3"
+            d="M69.965 71.719v23.334h23.334M136.079 52.273V28.94h-23.334M102.845 38.838v46.67M210.364-37.5l60.873 60.873c12.497 12.496 12.497 32.758 0 45.254l-77.745 77.746c-12.497 12.496-12.497 32.758 0 45.254l69.872 69.873"
+          />
+          <path
+            stroke="#111"
+            stroke-width="3"
+            d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.144"
+          />
+          <path
+            stroke="#fff"
+            stroke-width="5"
+            d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145"
+          />
+          <mask
+            id="b"
+            width="285"
+            height="285"
+            x="234"
+            y="-8"
+            maskUnits="userSpaceOnUse"
+            style="mask-type: alpha"
+          >
+            <path
+              fill="#111"
+              d="M234.864 209.036 451.4-7.5l67.175 67.175-216.536 216.536z"
+            />
+          </mask>
+          <g stroke="#fff" mask="url(#b)">
+            <path
+              stroke-width="3"
+              d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.145"
+            />
+            <path
+              stroke-width="5"
+              d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145"
+            />
+          </g>
+        </g>
+        <defs>
+          <clipPath id="a"><path fill="#fff" d="M0 .5h336v200H0z" /></clipPath>
+        </defs>
+      </svg>
+      <h1 class="tag">Learning</h1>
+
+      <p class="date">Published 21 Dec 2023</p>
+
+      <a href="#" class="title">HTML & CSS foundations</a>
+
+      <p class="paragraph">
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+
+      <div class="author-profile">
+        <img
+          src="assets/images/image-avatar.webp"
+          alt="Image of Greg Hopper"
+          class="profile-img"
+        />
+        <h3 class="author-name">Greg Hooper</h3>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">delight</a>.
+      </div>
+    </div>
+  </body>
+</html>
